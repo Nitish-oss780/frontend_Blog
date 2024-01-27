@@ -26,7 +26,7 @@ const Home = () => {
       <div className="container d-flex flex-wrap justify-content-center">
       {postData?.post?.map((item) => (
         <div className="card" key={item.id} style={{ width: "18rem",margin:"1rem" }}>
-          <img src={`/api/v1/getphoto/${item._id}`} style={{ height: "12rem" }} className="card-img-top" alt="..." />
+          <img src={`https://nitish-blog.onrender.com/api/v1/getphoto/${item._id}`} style={{ height: "12rem" }} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{item.title}</h5>
             <p className="card-text">

@@ -17,7 +17,7 @@ const Create = () => {
             postData.append("content",content);
             postData.append("author",author);
             postData.append("photo",photo);
-            const {data}=await axios.post("/api/v1/post",postData)
+            const {data}=await axios.post("https://nitish-blog.onrender.com/api/v1/post",postData)
             if(data?.success){
                 navigate('/');
             }else{

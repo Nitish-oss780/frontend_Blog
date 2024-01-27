@@ -12,7 +12,7 @@ const Detail = () => {
     const handleDelete=async(e)=>{
           e.preventDefault();
         try {
-            const {data}=await axios.delete(`/api/v1/delete/${id}`);
+            const {data}=await axios.delete(`https://nitish-blog.onrender.com/api/v1/delete/${id}`);
             if(data?.success){
                 navigate('/');
             }else{

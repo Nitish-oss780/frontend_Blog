@@ -1,6 +1,5 @@
 {
   "name": "my-app",
-  "proxy":"https://nitish-blog.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
