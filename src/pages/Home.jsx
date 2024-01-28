@@ -7,7 +7,7 @@ const Home = () => {
   useEffect(() => {
     const getPost=async()=>{
       try {
-        const {data}= await axios.get('/api/v1/getall');
+        const {data}= await axios.get('https://nitish-blog.onrender.com/api/v1/getall');
           // console.log(data);
           SetPostData(data);
           postData?.post&& console.log(postData?.post);
