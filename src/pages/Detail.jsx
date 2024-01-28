@@ -44,7 +44,7 @@ const Detail = () => {
       <h1 className="text-center">Detail Page of Post {postData?.post?.title}</h1>
         <h3 className="text-center" >Author:-{postData?.post?.author}</h3>
         <div className=" text-center">
-        <img src={`/api/v1/getphoto/${postData?.post?._id}`} style={{ width: "34rem" }} className="img-fluid" alt="..." />
+        <img src={`https://nitish-blog.onrender.com/api/v1/getphoto/${postData?.post?._id}`} style={{ width: "34rem" }} className="img-fluid" alt="..." />
         </div>
         <h3 className="mt-4 text-center" >Description</h3>
         <p className="text-center">{postData?.post?.description}</p>
