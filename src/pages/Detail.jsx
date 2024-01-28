@@ -27,7 +27,7 @@ const Detail = () => {
     
     const getPost=async()=>{
       try {
-        const {data}= await axios.get(`/api/v1/getone/${id}`);
+        const {data}= await axios.get(`https://nitish-blog.onrender.com/api/v1/getone/${id}`);
           console.log(data);
           SetPostData(data);
           postData?.post&& console.log(postData?.post);
