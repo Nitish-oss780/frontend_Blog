@@ -18,7 +18,7 @@ const Update = () => {
       post.append("content", postData.content);
       post.append("author", postData.author);
       post.append("photo", photo);
-      const { data } = await axios.put(`/api/v1/update/${postData._id}`, post);
+      const { data } = await axios.put(`https://nitish-blog.onrender.com/api/v1/update/${postData._id}`, post);
       if (data?.success) {
         navigate(`/detail/${postData._id}`);
       } else {
